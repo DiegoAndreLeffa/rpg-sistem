@@ -1,0 +1,49 @@
+{
+  "name": "@rpg/backend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build": "npm run build --prefix shared && tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "lint": "eslint src --ext .ts",
+    "start": "node dist/main.js",
+    "typecheck": "npm run build --prefix shared && tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.1.6",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^11.1.6",
+    "@nestjs/jwt": "^11.0.0",
+    "@nestjs/mongoose": "^11.0.3",
+    "@nestjs/passport": "^11.0.5",
+    "@nestjs/platform-express": "^11.1.6",
+    "@nestjs/platform-socket.io": "^11.1.6",
+    "@nestjs/websockets": "^11.1.6",
+    "@rpg/shared": "file:./shared",
+    "bcryptjs": "^3.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "cloudinary": "^2.10.1",
+    "dotenv": "^17.4.2",
+    "mongoose": "^8.18.0",
+    "passport": "^0.7.0",
+    "passport-jwt": "^4.0.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/multer": "^2.2.0",
+    "@types/node": "^24.4.0",
+    "@types/passport-jwt": "^4.0.1",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.34.0",
+    "globals": "^16.4.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

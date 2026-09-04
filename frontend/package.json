@@ -1,0 +1,35 @@
+{
+  "name": "@rpg/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint src --ext .ts,.tsx",
+    "preview": "vite preview",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^7.3.1",
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/react-fontawesome": "^3.5.0",
+    "@rpg/shared": "file:../backend/shared",
+    "@types/three": "^0.185.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^9.34.0",
+    "globals": "^16.4.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5"
+  }
+}
